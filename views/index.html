@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Love v/s Hate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Love v/s Hate</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h2 id="verdict"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">Total
+          <h2 id="total"></h2>
+        </div>
+        <div class="col-lg-4">Love %
+          <h2 id="love"></h2>
+        </div>
+        <div class="col-lg-4">Hate %
+          <h2 id="hate"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 style="color: #006600; background-color: #ffffff">Love
+            <h3 id="lovetweets"></h3>
+          </h2>
+        </div>
+        <div class="col-lg-6">
+          <h2 style="color: #ff0000; background-color: #ffffff">Hate
+            <h3 id="hatetweets"></h3>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/client.socket.io.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+extends layout
+
+block styles
+   link(rel='stylesheet',href='/stylesheets/style.css')
+
+block scripts
+   script(src='/javascripts/jquery.js')
+   script(src='/javascripts/jquery.min.js')
+   script(src='/socket.io/socket.io.js')
+   script(src='/javascripts/client.socket.io.js')
+
+block content
+  div(class="container")
+    //first row in container shows the final verdict
+    div(class="row")
+      div(class="col-lg-4")
+        h2#verdict
+    //second row in container displays the tweet statistics
+    div(class="row")
+      div(class="col-lg-4") Total
+        h2#total
+      div(class="col-lg-4") Love %
+        h2#love
+      div(class="col-lg-4") Hate %
+        h2#hate
+    //third row displays the love and hate tweets in two separate columns
+    div(class="row")
+      div(class="col-lg-6")
+        h2(style='color: #006600; background-color: #ffffff') Love
+          h3#lovetweets
+      div(class="col-lg-6")
+        h2(style='color: #ff0000; background-color: #ffffff') Hate
+          h3#hatetweets
