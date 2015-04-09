@@ -1,5 +1,6 @@
 # Twitter-Sentiment-Analyzer
 A love/hate sentiment analyzer on public streaming twitter feeds
+
 ***********Software that needs to be installed (if any) with download and installation instructions**********************
 twit: Enter the command 'npm install twit --save' to install the public streaming API for twitter from NPM and update the package.json file.
 Rest of the node packages are listed in the package.json file which could be installed with the command 'npm install'
