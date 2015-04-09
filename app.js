@@ -62,10 +62,10 @@ sio.sockets.on('connection', function(socket){
 		
 		//emit the meaningful data to the web browser client
 		socket.volatile.emit('ss-tweet', {	user: tweet.user.screen_name , 
-										  	text: tweet.text,
-										  	love: love_percent.toFixed(3),
-										  	hate: hate_percent.toFixed(3),
-										  	total: total
+							text: tweet.text,
+							love: love_percent.toFixed(3),
+							hate: hate_percent.toFixed(3),
+							total: total
 		});
 	});
 	
